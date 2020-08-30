@@ -1,0 +1,45 @@
+body {
+    background: rgb(32, 46, 75) !important;
+}
+
+.btns {
+    padding-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(9, 6rem);
+    grid-gap: 5px;
+    width: min-content;
+}
+
+.button {
+    width: 100%;
+    border: none;
+}
+
+#clap:hover {
+    filter: brightness(0.9);
+}
+
+.key-name {
+    color: rgb(236, 236, 95);
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.instrument {
+    color: white;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.key-name, .instrument {
+    font-weight: 500;
+}
+
+@media (max-width: 60rem) {
+    .btns{
+        grid-template-columns: repeat(3, 6rem);
+        grid-template-rows: repeat(3, 6rem);
+    }
+}

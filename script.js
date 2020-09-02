@@ -18,6 +18,7 @@ $(document).ready(function () {
             })
 
             btns[i].addEventListener('click',e=>{
+                audios[i].currentTime = 0
                 audios[i].play()
             })
 
